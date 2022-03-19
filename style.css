@@ -12,7 +12,6 @@
 html { font-size: 100%; }
 body {
   font-family: 'Alata', sans-serif;
-  /*font-family: 'Josefin Sans', sans-serif;*/
   font-size: .875rem;
   font-weight: 400;
 }
@@ -180,6 +179,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.main { overflow: hidden; }
 .main-title {
   padding: .5em;
   color: var(--white);
@@ -189,14 +189,14 @@ p {
   text-transform: uppercase;
   width: min-intrinsic;
   width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    display: table-caption;
-    display: -ms-grid;
-    -ms-grid-columns: min-content;
-    position: relative;
-    transition: color .4s;
-    overflow: hidden;
+  width: -moz-min-content;
+  width: min-content;
+  display: table-caption;
+  display: -ms-grid;
+  -ms-grid-columns: min-content;
+  position: relative;
+  transition: color .4s;
+  overflow: hidden;
 }
 .main-title::before {
   content: "";
@@ -340,7 +340,8 @@ h3 {
   display: block;
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,0));
+  background: rgba(0,0,0,.25);
+  transition: .2s;
 }
 .creation-incont h3 {
   width: 5em;
@@ -557,6 +558,7 @@ h3 {
   .social-links { justify-content: end; }
 }
 
+
 /*=== ANIMATIONS ===*/
 .vr-guy, .vr-txt, .vr-txt p, .creation-incont { transition: 1s; }
 @media (min-width: 59.375em) {
@@ -576,10 +578,7 @@ h3 {
   .creation-incont:nth-child(5) { transition-delay: 1s;}
   .creation-incont:nth-child(6) { transition-delay: 1.25s;}
   .creation-incont:nth-child(7) { transition-delay: 1.5s;}
-  .creation-incont:nth-child(8) { 
-    transition-delay: 1.75s;
-
-  }
+  .creation-incont:nth-child(8) { transition-delay: 1.75s; }
 }
 :is(.vr-guy, .vr-txt).active { transform: translateX(0); }
 .vr-txt p,
