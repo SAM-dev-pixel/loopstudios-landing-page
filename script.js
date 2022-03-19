@@ -8,10 +8,10 @@ const clickBurgerBtn =(btn)=> {
   });
 }
 clickBurgerBtn(document.querySelector('.burger-btn'));
-
+alert("shit!"); 
 // scroll animations
 const scrollAnimations =()=> {
-  alert("what the hell!");
+  
   const vrGuyImage = document.querySelector('.vr-guy');
   const vrText = document.querySelector('.vr-txt');
   const vrPText = vrText.querySelector('p');
