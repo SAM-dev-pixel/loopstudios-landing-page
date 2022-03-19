@@ -8,7 +8,7 @@ const clickBurgerBtn =(btn)=> {
   });
 }
 clickBurgerBtn(document.querySelector('.burger-btn'));
-alert("shit!"); 
+
 // scroll animations
 const scrollAnimations =()=> {
   
