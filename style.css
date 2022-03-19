@@ -342,9 +342,6 @@ h3 {
   inset: 0;
   background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,0));
 }
-.creation-incont:hover {
-  transform: scale(1.06);
-}
 .creation-incont h3 {
   width: 5em;
   position: absolute;
