@@ -578,7 +578,7 @@ h3 {
   .creation-incont:nth-child(7) { transition-delay: 1.5s;}
   .creation-incont:nth-child(8) { 
     transition-delay: 1.75s;
-    transition-property: transform translateX;
+
   }
 }
 :is(.vr-guy, .vr-txt).active { transform: translateX(0); }
